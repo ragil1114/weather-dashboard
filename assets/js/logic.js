@@ -32,3 +32,6 @@ var getCityWeather = function(city) {
         });
     });
 };
+
+
+cityFormEl.addEventListener("submit", formSumbitHandler);
