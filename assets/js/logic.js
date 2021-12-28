@@ -34,6 +34,51 @@ var getCityWeather = function(city) {
 };
 
 
+var displayWeather = function(weather, searchCity) {
+    //clear old content
+    weatherContainerEl.textContent= "";  
+    citySearchInputEl.textContent=searchCity;
+ 
+    //create date element
+    var currentDate = document.createElement("span")
+    currentDate.textContent=" (" + moment(weather.dt.value).format("MMM D, YYYY") + ") ";
+    citySearchInputEl.appendChild(currentDate);
+ 
+    //create an image element
+    var weatherIcon = document.createElement("img")
+    weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`);
+    citySearchInputEl.appendChild(weatherIcon);
+ 
+    //create a span element to hold temperature data
+    var temperatureEl = document.createElement("span");
+    temperatureEl.textContent = "Temperature: " + weather.main.temp + " °F";
+    temperatureEl.classList = "list-group-item"
+   
+    //create a span element to hold Humidity data
+    var humidityEl = document.createElement("span");
+    humidityEl.textContent = "Humidity: " + weather.main.humidity + " %";
+    humidityEl.classList = "list-group-item"
+ 
+    //create a span element to hold Wind data
+    var windSpeedEl = document.createElement("span");
+    windSpeedEl.textContent = "Wind Speed: " + weather.wind.speed + " MPH";
+    windSpeedEl.classList = "list-group-item"
+ 
+    //append to container
+    weatherContainerEl.appendChild(temperatureEl);
+ 
+    //append to container
+    weatherContainerEl.appendChild(humidityEl);
+ 
+    //append to container
+    weatherContainerEl.appendChild(windSpeedEl);
+ 
+    var lat = weather.coord.lat;
+    var lon = weather.coord.lon;
+ 
+ }
+
+
 var get5Day = function(city) {
     var apiKey = "844421298d794574c100e3409cee0499"
     var apiURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`
