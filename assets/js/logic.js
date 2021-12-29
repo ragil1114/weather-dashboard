@@ -25,6 +25,11 @@ var formSumbitHandler = function(event) {
 }
 
 
+var saveSearch = function() {
+    localStorage.setItem("cities", JSON.stringify(cities));
+};
+
+
 var getCityWeather = function(city) {
     var apiKey = "844421298d794574c100e3409cee0499"
     var apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
