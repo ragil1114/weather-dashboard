@@ -199,3 +199,4 @@ var pastSearchHandler = function(event) {
 
 
 cityFormEl.addEventListener("submit", formSumbitHandler);
+pastSearchButtonEl.addEventListener("click", pastSearchHandler);
