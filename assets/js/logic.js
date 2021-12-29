@@ -188,4 +188,14 @@ var pastSearch = function(pastSearch) {
 }
 
 
+var pastSearchHandler = function(event) {
+    var city = event.target.getAttribute("data-city")
+
+    if(city) {
+        getCityWeather(city);
+        get5Day(city);
+    }
+}
+
+
 cityFormEl.addEventListener("submit", formSumbitHandler);
