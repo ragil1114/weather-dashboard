@@ -77,7 +77,7 @@ var displayWeather = function(weather, searchCity) {
  
     var lat = weather.coord.lat;
     var lon = weather.coord.lon;
- 
+    getUvIndex(lat,lon)
 }
 
 
