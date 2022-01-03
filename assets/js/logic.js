@@ -1,7 +1,7 @@
 var cities = [];
-var cityFormEl=document.querySelector("#city-search-form");
-var cityInputEl=document.querySelector("#city");
-var weatherContainerEl=document.querySelector("#weather-container");
+var cityFormEl = document.querySelector("#city-search-form");
+var cityInputEl = document.querySelector("#city");
+var weatherContainerEl = document.querySelector("#weather-container");
 var citySearchInputEl = document.querySelector("#searched-city");
 var forecastTitle = document.querySelector("#forecast");
 var forecastContainerEl = document.querySelector("#fiveday-container");
@@ -143,7 +143,7 @@ var display5Day = function(weather) {
         
        
        var forecastEl=document.createElement("div");
-       forecastEl.classList = "card bg-primary text-light m-2";
+       forecastEl.classList = "card bg-info text-light m-2";
 
        // date element
        var forecastDate = document.createElement("h5")
