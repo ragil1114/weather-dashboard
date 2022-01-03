@@ -26,4 +26,5 @@ URL:
 https://ragil1114.github.io/weather-dashboard/
 
 #### Image
-"C:\Users\Rahil\code\projects\weather-dashboard\assets\images\demo.png"
+https://github.com/ragil1114/weather-dashboard/blob/main/assets/images/demo.png
+https://github.com/ragil1114/weather-dashboard/blob/main/assets/images/demo2.png
