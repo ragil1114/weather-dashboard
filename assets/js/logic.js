@@ -189,7 +189,7 @@ var pastSearch = function(pastSearch) {
     pastSearchEl.setAttribute("data-city",pastSearch)
     pastSearchEl.setAttribute("type", "submit");
 
-    pastSearchButtonEl.prepend(pastSearchEl);
+    pastSearchButtonEl.append(pastSearchEl);
 }
 
 
