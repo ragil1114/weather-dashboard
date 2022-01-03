@@ -5,7 +5,7 @@ var weatherContainerEl = document.querySelector("#weather-container");
 var citySearchInputEl = document.querySelector("#searched-city");
 var forecastTitle = document.querySelector("#forecast");
 var forecastContainerEl = document.querySelector("#fiveday-container");
-var pastSearchButtonEl = document.querySelector("#past-search-buttons");
+var pastSearchButtonEl = document.querySelector("#pastSearch-buttons");
 
 
 var formSumbitHandler = function(event) {
